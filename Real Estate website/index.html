@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Navbar</title>
+<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+<div class="navbar">
+  <img class="logo" src="./images/bh-removebg-preview.png" alt="Logo">
+  
+  <div class="container">
+    <div class="options">
+      <a class="option" href="#">About us</a>
+      <a class="option" href="#">Projects</a>
+      <a class="option" href="#">Agents</a>
+      <a class="option" href="#">Services</a>
+      <a class="option" href="#">Listings</a>
+      <a class="option" href="#"><img src="./images/search-normal.png"></a>
+    </div>
+  </div>
+  
+  <div class="other-services">Other services</div>
+  
+  <button class="contact-btn">Contact us</button>
+  
+  <!-- Hamburger Menu Icon -->
+  <div class="hamburger" onclick="toggleNavbar()">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+  </div>
+</div>
+<br>
+<div class="header">
+    <br><br><br><br>
+    <p class="para">Welcome to Realstate</p>
+    <h1 id="head">Manage Your</h1>
+    <h1 id="head1">Property</h1>
+    <h1 class="para1">Your will have everything nearby supermarket, buses , <br> station, the carmen neighborhood, etc</h1>
+    <img id="uni" src="./images/Capture-removebg-preview.png">
+     <br><br>
+     <div class="containerr">
+        <input type="text" class="textbox" placeholder="    Enter your email">
+        <button class="btn">Get a Quote</button>
+      </div>
+      <br><br><br><br>
+</div>
+<br>
+<div>
+  <p>Three steps, Three minutes.</p>
+  <h1></h1>
+</div>
+<script>
+function toggleNavbar() {
+  var options = document.querySelector('.options');
+  options.classList.toggle('responsive');
+}
+</script>
+
+</body>
+</html>
